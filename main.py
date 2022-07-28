@@ -5,6 +5,20 @@ bot = commands.Bot(command_prefix='!')
 
 @bot.event
 async def on_ready():
-    print ("Bot is online")
+    print (">>Bot is online<<")
 
-    bot.run('ODY1MTcyODMxMjU2MTgyODA0.GQt17A.8IFHhIXjSVia78Hgqu4EBgOiGhIXPcRtXJmX_Y')
+
+@bot.event
+async def on_menber_join(member):
+    print(f'{member}join!')
+        channel = bot.get_channel(1002114006351360040)
+        await channel.send(f'{member}join!')
+
+@bot.event
+async def on_menber_join(member):
+    print(f'{member}leave!')
+        channel = bot.get_channel(1002114044783755264)
+        await channel.send(f'{member}join!')
+
+
+bot.run('ODY1MTcyODMxMjU2MTgyODA0.GjWA4j.b0eqyXU_VMVFUNCEGq0PcC0E5QA4_D0OCBo4AI')
