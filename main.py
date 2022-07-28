@@ -21,4 +21,4 @@ async def on_menber_join(member):
         await channel.send(f'{member}join!')
 
 
-bot.run('ODY1MTcyODMxMjU2MTgyODA0.GjWA4j.b0eqyXU_VMVFUNCEGq0PcC0E5QA4_D0OCBo4AI')
+bot.run('')
